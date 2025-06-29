@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  nextjs-test-vps:
+    build: .
+    container_name: nextjs-test-vps
+    ports:
+      - "7000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - my-network
+    command: yarn start
+
+networks:
+  my-network:
+    external: true
