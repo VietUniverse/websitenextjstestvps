@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-// Header tối giản chỉ dành cho trang đăng nhập
 function MinimalHeader() {
   return (
     <header className="w-full py-6 px-4 md:px-8">
@@ -16,7 +15,6 @@ function MinimalHeader() {
   );
 }
 
-// Footer tối giản chỉ dành cho trang đăng nhập
 function MinimalFooter() {
   return (
      <footer className="bg-primary text-secondary">
@@ -31,11 +29,9 @@ function MinimalFooter() {
   );
 }
 
-// Đặt tên file này là page.js và đặt trong thư mục `src/app/signin/`
 export default function SignInPage() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // Logic xử lý đăng nhập ở đây
     console.log('Sign in form submitted!');
     alert('Chức năng đăng nhập chưa được cài đặt.');
   };

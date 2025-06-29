@@ -27,7 +27,6 @@ export default function RootLayout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         />
       </head>
-      {/* Body ở đây không còn chứa Header và Footer */}
       <body className="antialiased">
         {children}
       </body>

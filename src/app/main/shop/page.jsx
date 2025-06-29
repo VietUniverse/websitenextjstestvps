@@ -37,7 +37,6 @@ const priceRanges = [
 
 const colors = ['all', 'black', 'white', 'grey', 'brown'];
 
-// Đặt tên file này là page.js và đặt trong thư mục `src/app/shop/`
 export default function ShopPage() {
     const [filters, setFilters] = useState({
         searchTerm: '',
@@ -50,7 +49,6 @@ export default function ShopPage() {
     const filteredAndSortedProducts = useMemo(() => {
         let products = allProducts;
 
-        // Filtering logic
         if (filters.searchTerm) {
             products = products.filter(p => p.name.toLowerCase().includes(filters.searchTerm.toLowerCase()));
         }
@@ -68,7 +66,6 @@ export default function ShopPage() {
             products = products.filter(p => p.color === filters.color);
         }
 
-        // Sorting logic
         switch (filters.sortBy) {
             case 'price-asc':
                 products.sort((a, b) => a.price - b.price);
@@ -96,10 +93,8 @@ export default function ShopPage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-                {/* Sidebar bộ lọc */}
                 <aside className="lg:col-span-1">
                     <div className="sticky top-28 space-y-8">
-                        {/* Search */}
                         <div className="relative">
                             <input
                                 type="text"
@@ -110,7 +105,6 @@ export default function ShopPage() {
                             <i className="fas fa-search absolute top-1/2 right-4 transform -translate-y-1/2 text-gray-400"></i>
                         </div>
 
-                        {/* Category Filter */}
                         <div className="py-4 border-t">
                             <h3 className="font-semibold mb-3">Category</h3>
                             <div className="space-y-2 text-sm">
@@ -122,7 +116,6 @@ export default function ShopPage() {
                             </div>
                         </div>
 
-                        {/* Price Filter */}
                         <div className="py-4 border-t">
                             <h3 className="font-semibold mb-3">Price Range</h3>
                             <div className="space-y-2 text-sm">
@@ -135,7 +128,6 @@ export default function ShopPage() {
                             </div>
                         </div>
 
-                        {/* Color Filter */}
                         <div className="py-4 border-t">
                             <h3 className="font-semibold mb-3">Color</h3>
                             <div className="flex flex-wrap gap-2">
@@ -148,8 +140,6 @@ export default function ShopPage() {
                         </div>
                     </div>
                 </aside>
-
-                {/* Lưới sản phẩm */}
                 <section className="lg:col-span-3">
                     <div className="flex justify-between items-center mb-6">
                         <p className="text-sm text-gray-500">Showing {filteredAndSortedProducts.length} of {allProducts.length} results</p>

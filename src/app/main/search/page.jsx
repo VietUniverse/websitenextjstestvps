@@ -17,12 +17,10 @@ const allProducts = [
 
 const popularSearches = ['Sofa', 'Vase', 'Linen', 'Table', 'Candle'];
 
-// Hàm định dạng tiền tệ
 const formatCurrency = (amount) => {
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(amount).replace(/\s/g, '');
 };
 
-// Đặt tên file này là page.js và đặt trong thư mục `src/app/search/`
 export default function SearchPage() {
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -36,7 +34,6 @@ export default function SearchPage() {
     return (
         <main className="container mx-auto px-4 md:px-8 py-12">
             <div className="max-w-3xl mx-auto">
-                {/* Search Bar */}
                 <div className="relative mb-12">
                     <input
                         type="text"
@@ -48,9 +45,7 @@ export default function SearchPage() {
                     <i className="fas fa-search absolute top-1/2 right-2 transform -translate-y-1/2 text-2xl text-gray-400"></i>
                 </div>
 
-                {/* Conditional Content */}
                 {searchTerm ? (
-                    // Display search results
                     <div>
                         <h2 className="text-xl font-semibold mb-6">
                             {searchResults.length > 0
@@ -87,7 +82,6 @@ export default function SearchPage() {
                         )}
                     </div>
                 ) : (
-                    // Display popular searches
                     <div>
                         <h3 className="font-semibold text-gray-700">Popular Searches</h3>
                         <div className="flex flex-wrap gap-3 mt-4">

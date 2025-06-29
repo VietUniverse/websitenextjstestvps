@@ -32,25 +32,21 @@ const initialCartItems = [
     },
 ];
 
-// Hàm định dạng tiền tệ
 const formatCurrency = (amount) => {
     return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(amount).replace(/\s/g, '');
 };
 
-// Đặt tên file này là `page.jsx` và đặt trong thư mục `src/app/cart/`
 export default function ShoppingCartPage() {
     const [cartItems, setCartItems] = useState(initialCartItems);
     const [subtotal, setSubtotal] = useState(0);
 
-    // Tính lại tổng tiền mỗi khi giỏ hàng thay đổi
     useEffect(() => {
         const newSubtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
         setSubtotal(newSubtotal);
     }, [cartItems]);
 
-    // Xử lý thay đổi số lượng
     const handleQuantityChange = (id, newQuantity) => {
-        if (newQuantity < 1) return; // Số lượng không được nhỏ hơn 1
+        if (newQuantity < 1) return;
         setCartItems(
             cartItems.map(item =>
                 item.id === id ? { ...item, quantity: newQuantity } : item
@@ -58,7 +54,7 @@ export default function ShoppingCartPage() {
         );
     };
 
-    // Xử lý xóa sản phẩm
+
     const handleRemoveItem = (id) => {
         setCartItems(cartItems.filter(item => item.id !== id));
     };
@@ -105,7 +101,7 @@ export default function ShoppingCartPage() {
                                         <input
                                             type="number"
                                             value={item.quantity}
-                                            readOnly // Để người dùng chỉ có thể thay đổi bằng nút bấm
+                                            readOnly
                                             className="w-10 h-8 text-center border-t border-b focus:outline-none"
                                         />
                                         <button onClick={() => handleQuantityChange(item.id, item.quantity + 1)} className="w-8 h-8 border rounded-r-md hover:bg-gray-100">+</button>

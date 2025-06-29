@@ -2,10 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// This file should be named `page.jsx` and placed in `src/app/collections/`
 export default function CollectionsPage() {
-    // This component only renders the <main> content.
-    // The Header and Footer are automatically added by the root layout.
     return (
         <main>
             <section className="text-center py-16 md:py-24">
@@ -19,7 +16,6 @@ export default function CollectionsPage() {
             <section className="container mx-auto px-4 md:px-8 pb-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     
-                    {/* Collection 1: Living Room */}
                     <Link href="/collections/living-room" className="md:col-span-2 relative block group overflow-hidden h-[60vh] rounded-lg">
                         <Image 
                             src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400" 
@@ -35,7 +31,6 @@ export default function CollectionsPage() {
                         </div>
                     </Link>
 
-                    {/* Collection 2: Apparel */}
                     <Link href="/collections/apparel" className="relative block group overflow-hidden h-[60vh] rounded-lg">
                         <Image 
                             src="https://images.unsplash.com/photo-1556228720-195a672e8a03?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" 
@@ -51,7 +46,6 @@ export default function CollectionsPage() {
                         </div>
                     </Link>
 
-                    {/* Collection 3: Ceramics */}
                     <Link href="/collections/ceramics" className="relative block group overflow-hidden h-[60vh] rounded-lg">
                         <Image 
                             src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600" 
