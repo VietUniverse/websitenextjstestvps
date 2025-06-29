@@ -2,10 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// This file should be named page.js and placed in `src/app/journal/`
 export default function JournalPage() {
-    // This component only renders the <main> content.
-    // The Header and Footer are automatically added by the root layout.
     return (
         <main className="container mx-auto px-4 md:px-8 py-16">
             <div className="text-center mb-16">
@@ -18,7 +15,7 @@ export default function JournalPage() {
                 <Link href="/journal/a-conversation-with-ana-flores" className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center group">
                     <div className="w-full h-96 overflow-hidden rounded-lg">
                         <Image
-                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400"
+                            src="[https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400](https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2400)"
                             alt="A portrait of ceramicist Ana Flores in her studio."
                             width={1200}
                             height={800}
@@ -42,7 +39,7 @@ export default function JournalPage() {
                     <Link href="/journal/mid-century-modern-design" className="article-card group block">
                         <div className="w-full h-72 overflow-hidden bg-gray-200 rounded-lg">
                             <Image
-                                src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600"
+                                src="[https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600](https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1600)"
                                 alt="A living room decorated in mid-century modern style."
                                 width={800}
                                 height={800}
@@ -60,7 +57,7 @@ export default function JournalPage() {
                     <Link href="/journal/create-a-restful-sanctuary" className="article-card group block">
                         <div className="w-full h-72 overflow-hidden bg-gray-200 rounded-lg">
                             <Image
-                                src="https://plus.unsplash.com/premium_photo-1683649964414-74cb4e12bb20?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="[https://plus.unsplash.com/premium_photo-1683649964414-74cb4e12bb20?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://plus.unsplash.com/premium_photo-1683649964414-74cb4e12bb20?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
                                 alt="A calm and restful bedroom with soft lighting."
                                 width={800}
                                 height={800}
@@ -78,7 +75,7 @@ export default function JournalPage() {
                     <Link href="/journal/hand-loomed-linen-throws" className="article-card group block">
                         <div className="w-full h-72 overflow-hidden bg-gray-200 rounded-lg">
                             <Image
-                                src="https://plus.unsplash.com/premium_photo-1661506966203-e9e1e8af0372?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                src="[https://plus.unsplash.com/premium_photo-1661506966203-e9e1e8af0372?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://plus.unsplash.com/premium_photo-1661506966203-e9e1e8af0372?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)"
                                 alt="Close up shot of hand-loomed linen fabric."
                                 width={800}
                                 height={800}
