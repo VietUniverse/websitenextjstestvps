@@ -3,10 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
-// Dữ liệu giỏ hàng giả lập
+
 const initialCartItems = [
     {
         id: 1,
@@ -67,7 +65,6 @@ export default function ShoppingCartPage() {
 
     return (
         <>
-            <Header />
             <main className="container mx-auto px-4 md:px-8 py-12">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-serif">Shopping Bag</h1>
@@ -147,7 +144,6 @@ export default function ShoppingCartPage() {
                     </div>
                 )}
             </main>
-            <Footer />
         </>
     );
 }

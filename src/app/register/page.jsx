@@ -5,29 +5,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-// Component Header đơn giản cho trang đăng ký
-function RegisterHeader() {
-  return (
-    <header className="w-full py-6 px-4 md:px-8">
-      <div className="container mx-auto flex justify-center items-center">
-        <Link href="/" className="font-serif text-3xl tracking-widest">AURA</Link>
-      </div>
-    </header>
-  );
-}
 
-// Component Footer đơn giản
-function RegisterFooter() {
-    return (
-        <footer className="bg-primary text-secondary">
-            <div className="container mx-auto px-4 md:px-8 py-8">
-                <div className="pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} AURA. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
-    );
-}
 
 
 export default function RegisterPage() {
@@ -52,7 +30,6 @@ export default function RegisterPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <RegisterHeader />
 
       <main className="flex-grow container mx-auto px-4 py-16 flex items-center justify-center">
         <div className="w-full max-w-lg bg-white p-8 md:p-12 shadow-sm rounded-lg">
@@ -106,7 +83,6 @@ export default function RegisterPage() {
         </div>
       </main>
 
-      <RegisterFooter />
     </div>
   );
 }
