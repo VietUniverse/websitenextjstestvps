@@ -4,7 +4,6 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Dữ liệu sản phẩm giả lập để tìm kiếm
 const allProducts = [
     { id: 1, name: 'Linen Armchair', price: 12500000, category: 'Home & Decor', image: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=800' },
     { id: 2, name: 'Ceramic Vase', price: 1800000, category: 'Home & Decor', image: 'https://plus.unsplash.com/premium_photo-1668620538983-c5993e4a443d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
