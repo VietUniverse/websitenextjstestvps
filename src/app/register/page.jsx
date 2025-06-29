@@ -1,11 +1,8 @@
-
-
 "use client";
 
 import Link from 'next/link';
 import { useState } from 'react';
 
-// Component Header đơn giản cho trang đăng ký
 function RegisterHeader() {
   return (
     <header className="w-full py-6 px-4 md:px-8">
@@ -16,7 +13,6 @@ function RegisterHeader() {
   );
 }
 
-// Component Footer đơn giản
 function RegisterFooter() {
     return (
         <footer className="bg-primary text-secondary">
@@ -29,9 +25,7 @@ function RegisterFooter() {
     );
 }
 
-
 export default function RegisterPage() {
-  // Sử dụng state để quản lý dữ liệu form (ví dụ)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -45,7 +39,6 @@ export default function RegisterPage() {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    // Logic xử lý việc tạo tài khoản ở đây
     console.log('Form submitted with data:', formData);
     alert('Account creation functionality is not implemented yet.');
   };
@@ -110,4 +103,3 @@ export default function RegisterPage() {
     </div>
   );
 }
-
