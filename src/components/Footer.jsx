@@ -12,26 +12,26 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold tracking-wider uppercase text-sm mb-4">Shop</h4>
                         <nav className="space-y-3 text-sm">
-                            <Link href="#" className="block hover:text-white">New Arrivals</Link>
-                            <Link href="#" className="block hover:text-white">Home & Decor</Link>
-                            <Link href="#" className="block hover:text-white">Apparel</Link>
-                            <Link href="#" className="block hover:text-white">Self-Care</Link>
+                            <Link href="/shop" className="block hover:text-white">New Arrivals</Link>
+                            <Link href="/shop" className="block hover:text-white">Home & Decor</Link>
+                            <Link href="/shop" className="block hover:text-white">Apparel</Link>
+                            <Link href="/shop" className="block hover:text-white">Self-Care</Link>
                         </nav>
                     </div>
                      <div>
                         <h4 className="font-bold tracking-wider uppercase text-sm mb-4">About</h4>
                         <nav className="space-y-3 text-sm">
-                            <Link href="#" className="block hover:text-white">Our Story</Link>
-                            <Link href="#" className="block hover:text-white">Journal</Link>
-                            <Link href="#" className="block hover:text-white">Contact Us</Link>
-                            <Link href="#" className="block hover:text-white">FAQs</Link>
+                            <Link href="/journal" className="block hover:text-white">Our Story</Link>
+                            <Link href="/journal" className="block hover:text-white">Journal</Link>
+                            <Link href="/contact" className="block hover:text-white">Contact Us</Link>
+                            <Link href="/faq" className="block hover:text-white">FAQs</Link>
                         </nav>
                     </div>
                      <div>
                         <h4 className="font-bold tracking-wider uppercase text-sm mb-4">Follow</h4>
                         <nav className="space-y-3 text-sm">
-                            <Link href="#" className="block hover:text-white">Instagram</Link>
-                            <Link href="#" className="block hover:text-white">Facebook</Link>
+                            <a href="[https://instagram.com](https://instagram.com)" target="_blank" rel="noopener noreferrer" className="block hover:text-white">Instagram</a>
+                            <a href="[https://facebook.com](https://facebook.com)" target="_blank" rel="noopener noreferrer" className="block hover:text-white">Facebook</a>
                         </nav>
                     </div>
                 </div>
