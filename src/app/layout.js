@@ -1,7 +1,5 @@
 import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,17 +25,11 @@ export default function RootLayout({ children }) {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-          xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
         />
       </head>
-      <body className="antialiased flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
+      {/* Body ở đây không còn chứa Header và Footer */}
+      <body className="antialiased">
+        {children}
       </body>
     </html>
   );
