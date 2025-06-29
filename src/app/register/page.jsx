@@ -1,4 +1,6 @@
-import React, { useEffect } from 'react';
+"use client"; // Add this directive to mark the component as a Client Component
+
+import React from 'react'; // Removed unused useEffect import
 
 // In a real React application, you would typically add these links
 // to your main public/index.html file or manage them with a package like 'react-helmet'.
@@ -66,6 +68,7 @@ const GlobalStyles = () => (
 
 
 function CreateAccountPage() {
+  // This component needs to be a client component to handle form submission (event handlers).
   const handleFormSubmit = (event) => {
     event.preventDefault();
     // Handle account creation logic here
@@ -171,4 +174,3 @@ function CreateAccountPage() {
 }
 
 export default CreateAccountPage;
-
