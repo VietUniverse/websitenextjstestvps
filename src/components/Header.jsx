@@ -16,7 +16,7 @@ export default function Header() {
           <Link href="/main/search" className="hover:text-accent transition-colors">
             <i className="fas fa-search"></i>
           </Link>
-          <Link href="/main/register" className="hover:text-accent transition-colors">
+          <Link href="/register" className="hover:text-accent transition-colors">
             <i className="fas fa-user"></i>
           </Link>
           <Link href="/main/cart" className="hover:text-accent transition-colors relative">
