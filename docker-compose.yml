@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  nextjs-test-vps:
+  viet-test-next:
     build: .
-    container_name: nextjs-test-vps
+    container_name: viet-test-next
     ports:
       - "7000:3000"
     environment:
