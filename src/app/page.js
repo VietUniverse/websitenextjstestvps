@@ -1,10 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function AuraHomepage() {
   return (
     <>
+    <Header/>
       <main>
         <section className="container mx-auto px-4 md:px-8 py-16 md:py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -100,6 +103,7 @@ export default function AuraHomepage() {
             </div>
         </section>
       </main>
+      <Footer/>
     </>
   );
 }
